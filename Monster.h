@@ -10,16 +10,12 @@
 #define MONSTER_H
 #ifndef Monster_h
 
-
-
-
 enum class MonsterType
 {
 	ORC = 1,
 	TROLL = 2,
 	GOBLIN = 3
 };
-
 
 class Monster
 {
@@ -38,7 +34,6 @@ public:
 	MonsterType getRace();
 	~Monster();
 };
-
 
 #endif /* Monster_h */
 

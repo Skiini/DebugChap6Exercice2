@@ -6,10 +6,8 @@
 //
 //
 
-
 #include "Monster.h"
 #include <iostream>
-
 
 Monster::Monster()
 {
@@ -30,14 +28,11 @@ Monster::Monster()
 
 }
 
-
-
-
 void Monster::attack(Monster *m)
 {
 	double damage = this->attackPower - m->defensivePower;
 
-	if (damage < 0.0);
+	if (damage < 0.0)
 	{
 		damage = 0.0;
 	}
@@ -61,16 +56,10 @@ double Monster::getSpeed()
 	return speed;
 }
 
-
-
-
 MonsterType Monster::getRace()
 {
 	return race;
 }
-
-
-
 
 Monster::~Monster()
 {
